@@ -31,12 +31,26 @@ def charger_donnees_json(fichier):
         donnees = json.load(f)
     return donnees
 
+def affiche_cinemas ():
+    nb_document = db.cinemas.count_documents({})
+    print("nb_document :",nb_document)
+
+def recherche_cinemas_150place(ville):
+    result = db.cinemas.find({
+    "adresse.ville": ville,
+    "salles.capacite": {"$gt": 150}
+    } )
+    return list(result)
+
 # Charger les données des cinémas à partir des fichiers JSON
 cinema1_data = charger_donnees_json('data/cinema.json')
 cinema2_data = charger_donnees_json('data/cinema2.json')
-
+cinemas_data = charger_donnees_json("data/cinemas.json")
 # Rassembler les données des cinémas dans une liste
-cinemas_a_inserer = [cinema1_data, cinema2_data]
+cinemas_a_inserer = [cinemas_data]
 
 # Appel de la fonction pour insérer les cinémas
 #inserer_cinemas(cinemas_a_inserer)
+inserer_cinemas(cinemas_a_inserer)
+affiche_cinemas()
+print (recherche_cinemas_150place("Paris"))
