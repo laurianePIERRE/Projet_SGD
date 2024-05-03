@@ -1,0 +1,41 @@
+{
+  "_id": "filmID0",
+  "titre": "Titre du film2",
+  "type": "Action",
+  "date_sortie": { "jour": "08", "mois": "05", "annee": "2024" },
+  "realisateurs": ["Nom Réalisateur 1", "Nom Réalisateur 2"],
+  "acteurs": ["Orlando Bloom", "Tom Hanks"],
+  "duree_minutes": 120,
+  "langue_originale": "Français",
+  "limite_age": 12,
+  "seances": [
+    {
+      "date_heure": "2023-05-15",
+      "salle_id": "ObjectId of salle"
+    }
+  ],
+  "nombre_entrees": 500,
+  "note_moyenne": 4.2,
+  "nombre_votes": 100,
+  "cinema_id": "ID1Cine",
+  "commentaires": [
+    {
+      "auteur": "Nom Utilisateur 1",
+      "date": "2024-05-01",
+      "contenu": "Ce film était incroyable !",
+      "note": 5
+    },
+    {
+      "auteur": "Nom Utilisateur 2",
+      "date": "2024-05-02",
+      "contenu": "Je n'ai pas aimé ce film.",
+      "note": 2
+    },
+    {
+      "auteur": "Nom Utilisateur 3",
+      "date": "2024-05-03",
+      "contenu": "Une performance d'acteur exceptionnelle.",
+      "note": 4
+    }
+  ]
+}
