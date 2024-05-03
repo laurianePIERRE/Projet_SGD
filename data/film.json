@@ -1,0 +1,53 @@
+
+[
+  {
+    "titre": "Mission Improbable",
+    "genre": "Action",
+    "date_sortie": "2023-04-15",
+    "realisateur": "Jane Doe",
+    "acteurs_principaux": ["John Smith", "Emma Brown"],
+    "commentaires": [
+      {
+        "auteur": {
+          "nom": "John Doe",
+          "email": "john@example.com"
+        },
+        "note": 4,
+        "texte": "Un film épique avec beaucoup de rebondissements."
+      },
+      {
+        "auteur": {
+          "nom": "Jane Smith",
+          "email": "jane@example.com"
+        },
+        "note": 5,
+        "texte": "Excellente réalisation et scénario bien construit."
+      }
+    ]
+  },
+  {
+    "titre": "Skyline Runner",
+    "genre": "Action",
+    "date_sortie": "2023-07-22",
+    "realisateur": "Carlos Rivera",
+    "acteurs_principaux": ["Liam Cheng", "Sofia Morales"],
+    "commentaires": [
+      {
+        "auteur": {
+          "nom": "Alice Johnson",
+          "email": "alice@example.com"
+        },
+        "note": 5,
+        "texte": "Incroyable performance et des scènes d'action à couper le souffle!"
+      },
+      {
+        "auteur": {
+          "nom": "Bob Brown",
+          "email": "bob@example.com"
+        },
+        "note": 4,
+        "texte": "Très bon film, bien rythmé avec un excellent casting."
+      }
+    ]
+  }
+  ]
